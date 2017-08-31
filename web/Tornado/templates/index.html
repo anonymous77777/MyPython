@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Python</title>
+</head>
+<body>
+    <h2>Your informations are:</h2>
+    <ul>
+        {% for one in users %}
+            <li>username:{{one[1]}}</li>
+            <li>password:{{one[2]}}</li>
+            <li>email:{{one[3]}}</li>
+        {% end %}
+    </ul>
+    <form method="POST">
+        {% raw xsrf_form_html() %}  <! XSRF 保护 P528>
+        <p type="text" id="buttonv" visable=False> "?" </p>
+        <p><input type="BUTTON" value="退出登录" id="logout" /></p>
+        <p><input type="BUTTON" value="退出" id="lout" /></p>
+    </form>
+
+    <script src="{{static_url("js/jquery.min.js")}}"></script>
+    <script src="{{static_url("js/logout.js")}}"></script>
+</body>

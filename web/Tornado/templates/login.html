@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Python</title>
+</head>
+<body>
+    <h2> 登录页面</h2>
+    <p>用用户名为:{{user}}登录</p>
+    <form method="POST">
+        {% raw xsrf_form_html() %}  <! XSRF 保护 P528>
+        <p><span>UserName:</span><input type="text" id="username"/></p>
+        <p><span>Password:</span><input type="password" id="password" /></p>
+        <p><input type="BUTTON" value="登录" id="login" /></p>
+        <p type="text" id="confirm"> </p>
+    </form>
+
+    {% set website = "<a href='http://www.itdiffer.com'>welcome to my website</a>" %}
+    {% raw website %}
+
+    <script src="{{static_url("js/jquery.min.js")}}"></script>
+    <script src="{{static_url("js/login.js")}}"></script>
+</body>

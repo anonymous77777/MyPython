@@ -1,0 +1,14 @@
+Jacobs, Anthony
+ECS10 4 B-
+ECS20 4 C+
+ANS17 3 A
+ANS49H 2 D
+
+Wilson, Elaine
+ECS10 4 B+
+ECS20 4 C+
+ANS17 3 A
+ANS49H 2 D
+ANS100 5 B-
+
+
